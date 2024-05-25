@@ -4,12 +4,9 @@ using UnityEngine;
 
 namespace NeuroBlade
 {
-    public class CharacterLocomotionManager : MonoBehaviour
+    public class PlayerNetworkManager : CharacterNetworkManager
     {
-        protected virtual void Awake()
-        {
 
-        }
     }
 }
 

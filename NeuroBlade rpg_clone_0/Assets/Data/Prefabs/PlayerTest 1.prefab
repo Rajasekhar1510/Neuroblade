@@ -79,6 +79,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 8343667151848150415}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 37f2bf91b111f5a4bb2a2c0fb990b184,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 490989515379161852}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 37f2bf91b111f5a4bb2a2c0fb990b184,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7730757793601401448}
   m_SourcePrefab: {fileID: 100100000, guid: 37f2bf91b111f5a4bb2a2c0fb990b184, type: 3}
 --- !u!1 &3225986121912237867 stripped
 GameObject:
@@ -119,6 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0365f47defd6c44e819bc2e2a43f18b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterController: {fileID: 490989515379161852}
 --- !u!114 &8343667151848150415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,3 +140,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13e31e485c8d818449cdaaf413b980f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  verticalMovement: 0
+  horizontalMovement: 0
+  moveAmount: 0
+  walkingSpeed: 2
+  runningSpeed: 5
+  rotationSpeed: 15
+--- !u!143 &490989515379161852
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3225986121912237867}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 1.82
+  m_Radius: 0.23
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0.9, z: 0}
+--- !u!114 &7730757793601401448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3225986121912237867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7b5505b9d3b6fa4e979ffefab3d8e6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  networkPosition:
+    m_InternalValue: {x: 0, y: 0, z: 0}
+  networkRotation:
+    m_InternalValue: {x: 0, y: 0, z: 0, w: 1}
+  networkPositionVelocity: {x: 0, y: 0, z: 0}
+  networkPositionSmoothTime: 0.1
+  networkRotationSmoothTime: 0.1
