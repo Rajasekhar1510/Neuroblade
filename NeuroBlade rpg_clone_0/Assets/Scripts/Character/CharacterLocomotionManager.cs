@@ -10,6 +10,11 @@ namespace NeuroBlade
         {
 
         }
+
+        protected virtual void Update()
+        {
+
+        }
     }
 }
 

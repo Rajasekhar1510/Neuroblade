@@ -63,6 +63,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerTest 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 37f2bf91b111f5a4bb2a2c0fb990b184,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 7505bc64451838940beefe710f0488e7, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -87,6 +92,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 7730757793601401448}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 37f2bf91b111f5a4bb2a2c0fb990b184,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4496474804797325585}
   m_SourcePrefab: {fileID: 100100000, guid: 37f2bf91b111f5a4bb2a2c0fb990b184, type: 3}
 --- !u!1 &3225986121912237867 stripped
 GameObject:
@@ -128,6 +137,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterController: {fileID: 490989515379161852}
+  animator: {fileID: 0}
+  characterNetworkManager: {fileID: 0}
+  playerAnimatorManager: {fileID: 0}
+  playerLocomotionManager: {fileID: 0}
 --- !u!114 &8343667151848150415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,3 +204,21 @@ MonoBehaviour:
   networkPositionVelocity: {x: 0, y: 0, z: 0}
   networkPositionSmoothTime: 0.1
   networkRotationSmoothTime: 0.1
+  horizontalMovement:
+    m_InternalValue: 0
+  verticalMovement:
+    m_InternalValue: 0
+  moveAmount:
+    m_InternalValue: 0
+--- !u!114 &4496474804797325585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3225986121912237867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09465b54f2730e440b38520e5a8ffd73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
